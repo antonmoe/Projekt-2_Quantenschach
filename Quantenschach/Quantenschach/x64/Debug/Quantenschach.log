@@ -1,0 +1,121 @@
+﻿  gameEngine.cpp
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(129,9): error C2374: "fig": Neudefinition; Mehrfachinitialisierung
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(129,9): error C2086: "figure fig": Neudefinition
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(134,9): error C2374: "fig": Neudefinition; Mehrfachinitialisierung
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(134,9): error C2086: "figure fig": Neudefinition
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(137,9): error C2374: "fig": Neudefinition; Mehrfachinitialisierung
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(137,9): error C2086: "figure fig": Neudefinition
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(142,9): error C2374: "fig": Neudefinition; Mehrfachinitialisierung
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(142,9): error C2086: "figure fig": Neudefinition
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(145,9): error C2374: "fig": Neudefinition; Mehrfachinitialisierung
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(145,9): error C2086: "figure fig": Neudefinition
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(150,9): error C2374: "fig": Neudefinition; Mehrfachinitialisierung
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(150,9): error C2086: "figure fig": Neudefinition
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(153,9): error C2374: "fig": Neudefinition; Mehrfachinitialisierung
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(153,9): error C2086: "figure fig": Neudefinition
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(168,9): error C2374: "fig": Neudefinition; Mehrfachinitialisierung
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(168,9): error C2086: "figure fig": Neudefinition
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(171,9): error C2374: "fig": Neudefinition; Mehrfachinitialisierung
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(171,9): error C2086: "figure fig": Neudefinition
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(176,9): error C2374: "fig": Neudefinition; Mehrfachinitialisierung
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(176,9): error C2086: "figure fig": Neudefinition
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(179,9): error C2374: "fig": Neudefinition; Mehrfachinitialisierung
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(179,9): error C2086: "figure fig": Neudefinition
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(184,9): error C2374: "fig": Neudefinition; Mehrfachinitialisierung
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(184,9): error C2086: "figure fig": Neudefinition
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(187,9): error C2374: "fig": Neudefinition; Mehrfachinitialisierung
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(187,9): error C2086: "figure fig": Neudefinition
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(192,9): error C2374: "fig": Neudefinition; Mehrfachinitialisierung
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(192,9): error C2086: "figure fig": Neudefinition
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(195,9): error C2374: "fig": Neudefinition; Mehrfachinitialisierung
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
+C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(195,9): error C2086: "figure fig": Neudefinition
+      C:\Users\anton\OneDrive\Dokumente\Studium\Sem 02\Informatik 2\Project 2_Quantenschach\Projekt-2_Quantenschach\Quantenschach\Quantenschach\gameEngine.cpp(126,9):
+      Siehe Deklaration von "fig"
+  
