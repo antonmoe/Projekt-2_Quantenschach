@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\anton\\OneDrive\\Dokumente\\Studium\\Sem 02\\Informatik 2\\Project 2_Quantenschach\\Projekt-2_Quantenschach\\Quantenschach\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EE54E88D-2816-4D83-85AD-72212AEB06C1}|Quantenschach\\Quantenschach.vcxproj|C:\\Users\\anton\\OneDrive\\Dokumente\\Studium\\Sem 02\\Informatik 2\\Project 2_Quantenschach\\Projekt-2_Quantenschach\\Quantenschach\\Quantenschach\\visualisation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EE54E88D-2816-4D83-85AD-72212AEB06C1}|Quantenschach\\Quantenschach.vcxproj|solutionrelative:Quantenschach\\visualisation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EE54E88D-2816-4D83-85AD-72212AEB06C1}|Quantenschach\\Quantenschach.vcxproj|C:\\Users\\anton\\OneDrive\\Dokumente\\Studium\\Sem 02\\Informatik 2\\Project 2_Quantenschach\\Projekt-2_Quantenschach\\Quantenschach\\Quantenschach\\gameEngine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EE54E88D-2816-4D83-85AD-72212AEB06C1}|Quantenschach\\Quantenschach.vcxproj|solutionrelative:Quantenschach\\gameEngine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -19,10 +23,6 @@
       "RelativeMoniker": "D:0:0:{EE54E88D-2816-4D83-85AD-72212AEB06C1}|Quantenschach\\Quantenschach.vcxproj|solutionrelative:Quantenschach\\networking.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE54E88D-2816-4D83-85AD-72212AEB06C1}|Quantenschach\\Quantenschach.vcxproj|C:\\Users\\anton\\OneDrive\\Dokumente\\Studium\\Sem 02\\Informatik 2\\Project 2_Quantenschach\\Projekt-2_Quantenschach\\Quantenschach\\Quantenschach\\visualisation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EE54E88D-2816-4D83-85AD-72212AEB06C1}|Quantenschach\\Quantenschach.vcxproj|solutionrelative:Quantenschach\\visualisation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EE54E88D-2816-4D83-85AD-72212AEB06C1}|Quantenschach\\Quantenschach.vcxproj|C:\\Users\\anton\\OneDrive\\Dokumente\\Studium\\Sem 02\\Informatik 2\\Project 2_Quantenschach\\Projekt-2_Quantenschach\\Quantenschach\\Quantenschach\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EE54E88D-2816-4D83-85AD-72212AEB06C1}|Quantenschach\\Quantenschach.vcxproj|solutionrelative:Quantenschach\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 162,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ReadMe.txt",
               "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Dokumente\\Studium\\Sem 02\\Informatik 2\\Project 2_Quantenschach\\Projekt-2_Quantenschach\\Quantenschach\\Quantenschach\\ReadMe.txt",
               "RelativeDocumentMoniker": "Quantenschach\\ReadMe.txt",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Header.h",
               "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Dokumente\\Studium\\Sem 02\\Informatik 2\\Project 2_Quantenschach\\Projekt-2_Quantenschach\\Quantenschach\\Quantenschach\\Header.h",
               "RelativeDocumentMoniker": "Quantenschach\\Header.h",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "networking.cpp",
               "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Dokumente\\Studium\\Sem 02\\Informatik 2\\Project 2_Quantenschach\\Projekt-2_Quantenschach\\Quantenschach\\Quantenschach\\networking.cpp",
               "RelativeDocumentMoniker": "Quantenschach\\networking.cpp",
@@ -78,28 +78,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "gameEngine.cpp",
               "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Dokumente\\Studium\\Sem 02\\Informatik 2\\Project 2_Quantenschach\\Projekt-2_Quantenschach\\Quantenschach\\Quantenschach\\gameEngine.cpp",
               "RelativeDocumentMoniker": "Quantenschach\\gameEngine.cpp",
-              "ToolTip": "C:\\Users\\anton\\OneDrive\\Dokumente\\Studium\\Sem 02\\Informatik 2\\Project 2_Quantenschach\\Projekt-2_Quantenschach\\Quantenschach\\Quantenschach\\gameEngine.cpp*",
-              "RelativeToolTip": "Quantenschach\\gameEngine.cpp*",
-              "ViewState": "AgIAALoAAAAAAAAAAAAAAMgAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\anton\\OneDrive\\Dokumente\\Studium\\Sem 02\\Informatik 2\\Project 2_Quantenschach\\Projekt-2_Quantenschach\\Quantenschach\\Quantenschach\\gameEngine.cpp",
+              "RelativeToolTip": "Quantenschach\\gameEngine.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-03T11:28:50.753Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "visualisation.cpp",
               "DocumentMoniker": "C:\\Users\\anton\\OneDrive\\Dokumente\\Studium\\Sem 02\\Informatik 2\\Project 2_Quantenschach\\Projekt-2_Quantenschach\\Quantenschach\\Quantenschach\\visualisation.cpp",
               "RelativeDocumentMoniker": "Quantenschach\\visualisation.cpp",
               "ToolTip": "C:\\Users\\anton\\OneDrive\\Dokumente\\Studium\\Sem 02\\Informatik 2\\Project 2_Quantenschach\\Projekt-2_Quantenschach\\Quantenschach\\Quantenschach\\visualisation.cpp",
               "RelativeToolTip": "Quantenschach\\visualisation.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-03T11:28:35.491Z"
+              "WhenOpened": "2025-12-03T11:28:35.491Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
