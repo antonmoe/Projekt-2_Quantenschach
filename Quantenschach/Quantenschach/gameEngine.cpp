@@ -6,45 +6,36 @@
 
 using namespace std; 
 
-class square {
-private:
-	int x, y;
-public: 
-	void setYX(int ykoord, int xkoord) {
-		y = ykoord;
-		x = xkoord;
-	}
-	int get_X() {
-		return x;
-	}
-	int get_Y() {
-		return y;
-	}
+enum class Color { WHITE, BLACK };
+
+struct Square {
+	int y;
+	int x;
+	
 };
 
-
-class figure {
+class Figure {
 
 private:
 	bool onBaseline = true; 
-	int colour;		//0 oder 1 weiﬂ oder schwarz
-	char type;		//Rook1/2, Queen, King, Bishop1/2, Night1/2, pawn1-8
-	int id; 
+	Color color;		
+	char type;		
+	int id;					//Rook1/2, Queen, King, Bishop1/2, Night1/2, pawn1-8
 	float prob = 1;
-	square sq;		//feld auf dem die Figur sitzt
-	vector<figure*>crossing; //verschr‰nkung  
+	Square placedOn;				//feld auf dem die Figur sitzt
+	vector<Figure*> correlations;	//verschr‰nkung  
 
 
 public:
 
-	figure(int col, char t, square s, int i) {
-		colour = col;
+	Figure(Color col, char t, Square s, int i) {
+		color = col;
 		type = t;
-		sq = s;
+		placedOn = s;
 		id = i; 
 	}
-	int getColour() {
-		return colour;
+	Color getColor() {
+		return color;
 	}
 	char getType() {
 		return type;
@@ -53,164 +44,184 @@ public:
 		return prob;
 	}
 	
-	void makeMove(figure * field[8][8], square s2) {
+	void makeMove(Figure * field[8][8], Square s2) {
 
 		//Todo wahrscheinlichkeiten bei superposition/verschr‰nkungen 
-
-
-		vector<square> moves = getPosibleMoves();
-		//bisher nur bewegung der figur fig von einem feld f1 nach f2
-		sq = s2;
-
+		// 
 		//oder 2 moegl. 
 		//field[sq.x][sq.y] = ; //abfrage nob move gemacht werden kann --> move im feld eintragen 
 
 	}
 		
-	vector<square> getPosibleMoves() {
+	/*vector<Square> getPosibleMoves(Board& board) {
 
-		vector<square>posMoves;
-		square s; 
+		vector<Square>posMoves;
+		Square pos; 
+
+		int dirs[4][2] = {
+			{1,0},{-1,0},
+			{0,1},{0,-1} };
 
 		switch (type) {
 		case 'p':
 			
-			if (onBaseline) {
+			int dir = (color == Color::WHITE ? -1 : 1 ); //Richtungsangabe: Weis nach oben, Schwarz nach unten
+			int x = placedOn.x;
+			int y = placedOn.y; 
 
-				s.setYX(sq.get_Y()+1, sq.get_X());
-				posMoves.push_back(s);
-				s.setYX(sq.get_Y()+2, sq.get_X());
-				posMoves.push_back(s);
+			Square s;	//{y,x}
+			
+			if (onBaseline) {
+				s = { placedOn.y + dir, placedOn.x };
+				if (board.getXY(s.x, s.y) == nullptr) {
+					posMoves.push_back(s);
+				}
+				s = { placedOn.y + (2*dir), placedOn.x };
+				if (board.getXY(s.x, s.y) == nullptr) {
+					posMoves.push_back(s);
+				}
+				
 			}
 			else {
-				s.setYX(sq.get_Y()+1, sq.get_X());
+				s = { placedOn.y + dir, placedOn.x };
+				if (board.isInside(s.y, s.x) && board.getXY(s.x, s.y) == nullptr) {
+					posMoves.push_back(s);
+				}
+
+
+
+
 			}break; 
 		case 'r':
 
 			
 		}
 		return posMoves; 
+	}*/
+
+	void merge(Figure * fig2) {
+
 	}
 
-	void merge(figure * fig2) {
+	void split() {
+		
 
-	}
-
-	void split(figure* field[8][8], square sq2_1, square sq2_2) {
-		prob = prob / 2;	//halbiert die wahrscheinlichkeit der aktuellen figur
-		figure newFig = *this;	//kopiere die aktuelle figur
-		figure newFig_2 = *this;	//kopiere die aktuelle figur
-		newFig.makeMove(field, sq2_1);	//bewege die neue figur auf das erste ziel
-		newFig_2.makeMove(field, sq2_2);	//bewege die neue figur auf das zweite ziel
-
-
-		field[sq2_1.get_Y()][sq2_1.get_X()] = &newFig; 
-		field[sq2_2.get_Y()][sq2_2.get_X()] = &newFig_2;
+		
 
 	}
 	
 };
 
-  
-figure * field[8][8];	//2D-Array an pointern auf figuren
-//nicht pointer !!!!!
+class Board {
+private:
+	Figure* grid[8][8];
 
-void initField() {
-
-	square sq; 
-
-	//Place white
-	//Place Ponds
-	for (int i = 0; i < 8; i++) {		
-		sq.setYX(1,i);
-		figure fig(0, 'p', sq, i);
-		field[sq.get_Y()][sq.get_X()] = &fig;
-	}
-	//Place Rooks
-	sq.setYX(0, 0);
-	figure fig(0, 'r', sq, 0);
-	field[sq.get_Y()][sq.get_X()];
-	sq.setYX(0, 7);
-	figure fig = figure(0, 'r', sq, 1);
-	field[sq.get_Y()][sq.get_X()];
-
-	//Place Knights
-	sq.setYX(0, 1);
-	figure fig(0, 'k', sq, 0);
-	field[sq.get_Y()][sq.get_X()];
-	sq.setYX(0, 6);
-	figure fig(0, 'k', sq, 1);
-	field[sq.get_Y()][sq.get_X()];
-
-	//Place Bishops
-	sq.setYX(0, 2);
-	figure fig(0, 'b', sq, 0);
-	field[sq.get_Y()][sq.get_X()];
-	sq.setYX(0, 5);
-	figure fig(0, 'b', sq, 1);
-	field[sq.get_Y()][sq.get_X()];
-
-	//Place king and queen
-	sq.setYX(0, 4);
-	figure fig(0, 'K', sq, 0);
-	field[sq.get_Y()][sq.get_X()];
-	sq.setYX(0, 3);
-	figure fig(0, 'Q', sq, 0);
-	field[sq.get_Y()][sq.get_X()];
-
-	//--------
-
-	//place black
-	//Place Ponds
-	for (int i = 0; i < 8; i++) {
-		sq.setYX(6, i);
-		figure fig(1, 'p', sq, i);
-		field[sq.get_Y()][sq.get_X()] = &fig;
+public:
+	Board() {
+		// Alles mit nullptr initialisieren
+		for (int i = 0; i < 8; ++i)
+			for (int j = 0; j < 8; ++j)
+				grid[i][j] = nullptr;
 	}
 
-	//Place Rooks
-	sq.setYX(7, 0);
-	figure fig(1, 'r', sq, 0);
-	field[sq.get_Y()][sq.get_X()];
-	sq.setYX(7, 7);
-	figure fig(1, 'r', sq, 1);
-	field[sq.get_Y()][sq.get_X()];
+	~Board() {
+		// Figuren lˆschen
+		for (int i = 0; i < 8; ++i)
+			for (int j = 0; j < 8; ++j)
+				grid[i][j] = nullptr;
+	}
 
-	//Place Knights
-	sq.setYX(7, 1);
-	figure fig(1, 'k', sq, 0);
-	field[sq.get_Y()][sq.get_X()];
-	sq.setYX(7, 6);
-	figure fig(1, 'k', sq, 1);
-	field[sq.get_Y()][sq.get_X()];
+	Figure* getXY(int x, int y) {
+		return grid[y][x];
+	}
+	void setXY(int x, int y, Figure* f) {
+		grid[y][x] = f;
+	}
+	void print() {
+		cout << endl;
+		for (int y = 0; y < 8; y++) {
+			cout << 8 - y << " | ";
+			for (int x = 0; x < 8; x++) {
+				if (grid[y][x]) {
+					cout << grid[y][x]->getType();
+				}
+				else {
+					cout << ".";
+				}
+				cout << "|";
 
-	//Place Bishops 
-	sq.setYX(7, 2);
-	figure fig(1, 'b', sq, 0);
-	field[sq.get_Y()][sq.get_X()];
-	sq.setYX(7, 5);
-	figure fig(1, 'b', sq, 1);
-	field[sq.get_Y()][sq.get_X()];
+			}cout << endl;
+		}
+	}
+	void init() {
+		Square s;
+		//Place Ponds 
+		int y = 6;
+		for (int x = 0; x < 8; x++) {
+			s = { y,x }; 				//Aktueller square auf dem die figur sitzt wird figur selbst ¸bergeben
+			grid[y][x] = new Figure(Color::WHITE, 'p', s, x);//id 1->8
+			s = { y - 5,x };
+			grid[y-5][x] = new Figure(Color::BLACK, 'p', s, x);
+		}
+		//Place Rooks
+		s = { 7,0 };
+		grid[s.y][s.x] = new Figure(Color::WHITE, 'r', s, 1);
+		s = { 7,7 };
+		grid[s.y][s.x] = new Figure(Color::WHITE, 'r', s, 2);
+		s = { 0,0 };
+		grid[s.y][s.x] = new Figure(Color::BLACK, 'r', s, 1);
+		s = { 0,7 };
+		grid[s.y][s.x] = new Figure(Color::BLACK, 'r', s, 1);
 
-	//Place king and queen  
-	sq.setYX(7, 4);
-	figure fig(1, 'K', sq, 0);
-	field[sq.get_Y()][sq.get_X()];
-	sq.setYX(7, 3);
-	figure fig(1, 'Q', sq, 1);
-	field[sq.get_Y()][sq.get_X()];
+		//Place Knights
+		s = { 7,1 };
+		grid[s.y][s.x] = new Figure(Color::WHITE, 'n', s, 1);
+		s = { 7,6 };
+		grid[s.y][s.x] = new Figure(Color::WHITE, 'n', s, 2);
+		s = { 0,1 };
+		grid[s.y][s.x] = new Figure(Color::BLACK, 'n', s, 1);
+		s = { 0,6 };
+		grid[s.y][s.x] = new Figure(Color::BLACK, 'n', s, 2);
 	
-}
+
+	//Place Bishops, Queens, Kings can be added similarly
+		s = { 7,2 };
+		grid[s.y][s.x] = new Figure(Color::WHITE, 'b', s, 1);
+		s = { 7,5 };
+		grid[s.y][s.x] = new Figure(Color::WHITE, 'b', s, 2);
+		s = { 0,2 };
+		grid[s.y][s.x] = new Figure(Color::BLACK, 'b', s, 1);
+		s = { 0,5 };
+		grid[s.y][s.x] = new Figure(Color::BLACK, 'b', s, 2);
+
+		s = { 7,3 };
+		grid[s.y][s.x] = new Figure(Color::WHITE, 'q', s, 1);
+		s = { 0,3 };
+		grid[s.y][s.x] = new Figure(Color::BLACK, 'q', s, 1);
+
+		s = { 7,4 };
+		grid[s.y][s.x] = new Figure(Color::WHITE, 'k', s, 1);
+		s = { 0,4 };
+		grid[s.y][s.x] = new Figure(Color::BLACK, 'k', s, 1);
+
+
+	}
+	bool isInside(int y, int x) {
+		return(y >= 0 && y < 8 && x >= 0 && x < 8);		//pr¸ft ob koordinaten auf Feld liegen
+	}
+};
+
+
+
+ 
 
 int main() {
-	initField();
-	for (int r = 0; r < 8; r++) {
-		for (int c = 0; c < 8; c++) {
-			cout << " | " << field[r][c] << endl;
-		}
+	Board GameBoard; 
 
-	}
+	GameBoard.init();
+	GameBoard.print();
 	
+	return 0; 
 }
 
 
