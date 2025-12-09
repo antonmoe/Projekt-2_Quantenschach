@@ -32,7 +32,7 @@ private:
 	int id; 
 	float prob = 1;
 	square sq;		//feld auf dem die Figur sitzt
-	vector<figure*>crossing; //verschränk. 
+	vector<figure*>crossing; //verschränkung  
 
 
 public:
@@ -66,14 +66,15 @@ public:
 		//field[sq.x][sq.y] = ; //abfrage nob move gemacht werden kann --> move im feld eintragen 
 
 	}
-
+		
 	vector<square> getPosibleMoves() {
 
 		vector<square>posMoves;
+		square s; 
+
 		switch (type) {
-		
 		case 'p':
-			square s;
+			
 			if (onBaseline) {
 
 				s.setYX(sq.get_Y()+1, sq.get_X());
@@ -84,9 +85,10 @@ public:
 			else {
 				s.setYX(sq.get_Y()+1, sq.get_X());
 			}break; 
+		case 'r':
+
+			
 		}
-
-
 		return posMoves; 
 	}
 
@@ -111,7 +113,7 @@ public:
 
   
 figure * field[8][8];	//2D-Array an pointern auf figuren
-
+//nicht pointer !!!!!
 
 void initField() {
 
